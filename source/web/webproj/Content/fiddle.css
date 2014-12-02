@@ -1,0 +1,30 @@
+﻿.container-height {
+  display: table;
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%; }
+  .container-height .row {
+    display: table-row;
+    height: 100%; }
+    .container-height .row *[class*="col-"] {
+      display: table-cell;
+      float: none; }
+
+#fiddle-body .body-content {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+#fiddle-body #fiddle-map-timeline {
+  min-width: 20em; }
+#fiddle-body #fiddle-map-container {
+  padding: 0; }
+  #fiddle-body #fiddle-map-container #fiddle-map {
+    width: 100%;
+    height: 100%; }
+
+.fiddle-map-container {
+  position: relative; }
+
+/*# sourceMappingURL=fiddle.css.map */
