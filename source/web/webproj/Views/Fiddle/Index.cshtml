@@ -2,28 +2,11 @@
     Layout = "~/Views/Shared/_FiddleLayout.cshtml";
 }
 
-<script type="text/javascript">
-    
-    function initialize() {
-        var mapOptions = {
-            center: { lat: -34.397, lng: 150.644},
-            zoom: 8
-        };
-
-        var map = new google.maps.Map(document.getElementById('fiddle-map'),
-            mapOptions);
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-
-</script>
-
-<div class="container-fluid container-height">
+<div class="container-fluid container-height" ng-controller="index as indexCtrl">
     <div class="row">
         <div id="fiddle-map-timeline" class="col-md-3">list of pins</div>
         <div id="fiddle-map-container" class="col-md-9">
-            <div id="fiddle-map">
-            </div>
+            <ui-gmap-google-map id="fiddle-map" center='indexCtrl.map.center' zoom='indexCtrl.map.zoom' options="indexCtrl.map.options"></ui-gmap-google-map>
         </div>
     </div>
 </div>

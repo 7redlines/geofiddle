@@ -47,3 +47,17 @@
 
     }
 }
+
+ui-gmap-google-map {
+    display: flex;
+    align-items: stretch;
+
+    .angular-google-map {
+        flex: 1;
+        display: flex;
+
+        .angular-google-map-container {
+            flex: 1;
+        }
+    }
+}

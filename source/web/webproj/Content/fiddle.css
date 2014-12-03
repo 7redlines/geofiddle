@@ -27,4 +27,13 @@
 .fiddle-map-container {
   position: relative; }
 
+ui-gmap-google-map {
+  display: flex;
+  align-items: stretch; }
+  ui-gmap-google-map .angular-google-map {
+    flex: 1;
+    display: flex; }
+    ui-gmap-google-map .angular-google-map .angular-google-map-container {
+      flex: 1; }
+
 /*# sourceMappingURL=fiddle.css.map */

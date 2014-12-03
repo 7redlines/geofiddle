@@ -14,6 +14,10 @@ namespace Se7enRedLines.GeoFiddle.Web
                 "~/Scripts/respond.js",
                 "~/bower_components/angularjs/angular.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/js/map").Include(
+                "~/bower_components/lodash/dist/lodash.js",
+                "~/bower_components/angular-google-maps/dist/angular-google-maps.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/js/app").Include(
                 "~/Scripts/app/app.js",
                 "~/Scripts/app/pages/index.js"));

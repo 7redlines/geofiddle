@@ -1,7 +1,7 @@
 ﻿@using System
 
 <!DOCTYPE html>
-<html>
+<html ng-app="geofiddle">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,11 @@
 
     @Scripts.Render("~/bundles/js/modernizr")
     
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOTcvrJDziEgGbVW8soHydf--V9lXn-6c"></script>
+    @Scripts.Render("~/bundles/js/init")
+    @Scripts.Render("~/bundles/js/map")
+    @Scripts.Render("~/bundles/js/app")
+
+    @*<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOTcvrJDziEgGbVW8soHydf--V9lXn-6c"></script>*@
 </head>
 <body id="fiddle-body">
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -36,9 +40,6 @@
     <div class="container-fluid body-content">
         @RenderBody()
     </div>
-
-    @Scripts.Render("~/bundles/js/init")
-    @Scripts.Render("~/bundles/js/app")
     @RenderSection("scripts", required: false)
 </body>
 </html>
